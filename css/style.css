@@ -199,7 +199,6 @@ main {
 
 .about-me {
 	width: 100%;
-	padding-bottom: 150px;
 }
 
 .about-picture {
@@ -220,25 +219,6 @@ main {
 	list-style-type: circle;
 }
 
-/*
- *
- * contact form
- *
- */
-
-.contact-form {
-	width: 25%;
-	padding-bottom: 10px;
-}
-
-.contact {
-	display: block;
-	width: 100%;
-	margin-bottom: 10px;
-	padding: 2px;
-	border-radius: 5px;
-	border: 2px solid #6ccea4; 
-}
 
 /*
  *
@@ -289,6 +269,9 @@ main {
 		height: 75px;
 		width: 125px;
 	}
+	.social-media ul li {
+		padding-right: 50px;
+	}
 }
 
 @media screen and (min-width: 451px) and (max-width: 959px) {
@@ -306,7 +289,12 @@ main {
 
 @media screen and (min-width: 650px) {
 	.project {
+		margin-left: auto;
+		margin-right: auto;
   		width: 33.33%;
+  	}
+  	.about-me {
+  		padding-bottom: 75px;
   	}
   	.about-picture {
   		width: 50%;

@@ -1,0 +1,335 @@
+@import url(http://weloveiconfonts.com/api/?family=brandico);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;	
+	height: 100%;
+}
+
+body {
+	/*background-color: #cef9ea;*/
+	color: #004e54;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+header, nav, footer, section, article, div {
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
+
+hr {
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	border-width: 1px;
+	border-color: #6ccea4;
+}
+
+form {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+main {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.featured-text {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+/*
+ *
+ * hamburger menu
+ *
+ */
+
+.hamburger-holder {
+	position: absolute;
+	top: 5%;
+	left: 0;
+}
+
+.hamburger {
+	display: none;
+}
+
+/*
+ *
+ * header
+ *
+ */
+
+.header {
+	width: 100%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.header-logo {
+	width: 33.33%;
+	margin-top: 5px;
+}
+
+.logo-picture {
+	height: 100px;
+	width: 150px;
+}
+
+.header-title {
+	padding-right: 25px;
+	width: 100%;
+	display: block;
+	text-align: right;
+}
+
+.name {
+	margin-top: 15px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	color: #002c36;
+	font-weight: 300;
+	font-size: 32px;
+}
+
+.sub-name {
+	margin-top: 0;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	color: #002c36;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+/*
+ *
+ * nav
+ *
+ */
+.nav {
+ 	width: 100%;
+
+}
+
+.nav-menu {
+ 	width: 100%;
+
+}
+
+.nav-menu ul {
+ 	width: 100%;
+ 	text-align: center;
+}
+
+.nav-menu li {
+ 	list-style-type: none;
+ 	display: inline;
+ 	padding: .5em;
+ 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+/*
+ *
+ * big picture
+ *
+ */
+
+.big-picture-row {
+	width: 100%;
+}
+
+.big-picture {
+	width: 100%;
+	height: 350px;
+	border-radius: 5px;
+}
+
+/*
+ *
+ * project
+ *
+ */
+
+.project-row {
+	width: 100%;
+	margin-top: 1em;
+}
+
+.project {
+	width: 100%;
+	padding-right: 10px;
+}
+
+.project:last-of-type {
+	padding-right: 0px;
+}
+
+.project-picture {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	height: 250px;
+	border-radius: 5px;
+}
+
+.project-description {
+	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+/*
+ *
+ * about me
+ *
+ */
+
+.about-me {
+	width: 100%;
+}
+
+.about-picture {
+	width: 100%;
+	height: 100%;
+}
+
+.about-description {
+	width: 100%;
+}
+
+.about-description ul {
+	margin-top: 0;
+	list-style-type: none;
+}
+
+.about-description ul li ul {
+	list-style-type: circle;
+}
+
+/*
+ *
+ * contact form
+ *
+ */
+
+.contact-form {
+	width: 25%;
+	padding-bottom: 10px;
+}
+
+.contact {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 2px;
+	border-radius: 5px;
+	border: 2px solid #6ccea4; 
+}
+
+/*
+ *
+ * footer
+ *
+ */
+
+.social-media {
+	width: 50%;
+	text-align: center;
+	display: inline;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.social-media ul {
+	list-style-type: none;
+}
+
+.social-media ul li {
+	display: inline;
+	padding-right: 10px;
+}
+
+/*
+ *
+ * media queries
+ *
+ */
+
+@media screen and (max-width: 450px) {
+	.hamburger {
+		display: block;
+	}
+	.nav {
+		left: -300px;
+		background-color: #fff;
+		position: absolute;
+		width: 75%;
+	}
+	.nav-menu ul {
+		text-align: left;
+	}
+	.nav-menu li {
+		display: block;
+	}
+	.logo-picture {
+		height: 75px;
+		width: 125px;
+	}
+}
+
+@media screen and (min-width: 451px) and (max-width: 959px) {
+	.about-picture {
+  		width: 50%;
+  	}
+  	.about-description {
+  		width: 50%;
+  		padding-left: 50px;
+  	}
+  	.name {
+  		font-size: 42px;
+  	}
+}
+
+@media screen and (min-width: 650px) {
+	.project {
+  		width: 33.33%;
+  	}
+  	.about-picture {
+  		width: 50%;
+  	}
+  	.about-description {
+  		width: 33.33%;
+  		padding-left: 100px;
+  		height: 350px;
+  	}
+  	.name {
+  		font-size: 42px;
+  	}
+  	.sub-name {
+  		font-size: 24px;
+  	}
+}
+
+@media screen and (min-width: 960px) {
+	.header-title {
+		padding-right: 50px; 
+	}
+  	main {
+  		width: 960px;
+  		margin-left: auto;
+  		margin-right: auto;
+  	}
+}

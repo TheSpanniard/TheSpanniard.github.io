@@ -263,6 +263,11 @@ main {
 	padding-right: 10px;
 }
 
+.email {
+	padding-left: 50px;
+	margin: 0 auto 10px auto;
+}
+
 /*
  *
  * media queries
@@ -306,27 +311,29 @@ main {
   	.name {
   		font-size: 42px;
   	}
+  	.email {
+  		width: 50%;
+  		padding-left: 0px;
+  	}
 }
 
 @media screen and (min-width: 650px) {
-	
-  	.about-me {
-  		padding-bottom: 75px;
-  	}
   	.about-picture {
   		width: 50%;
   		height: 100%;
   	}
   	.about-description {
-  		width: 33.33%;
-  		padding-left: 100px;
-  		height: 350px;
+  		width: 50%;
+  		padding-left: 50px;
   	}
   	.name {
   		font-size: 42px;
   	}
   	.sub-name {
   		font-size: 24px;
+  	}
+  	.email {
+  		width: 25%;
   	}
 }
 
